@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  highperformanceapi:
+    build:
+      context: .
+      dockerfile: HighPerformanceApi/Dockerfile
+    container_name: highperf-api
+    ports:
+      - "5000:8080"
+    depends_on:
+      sqlserver:
+        condition: service_started
+      redis:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=HighPerfDb;User=sa;Password=YourStrong!Pass123;TrustServerCertificate=True;"
+      ConnectionStrings__Redis: "redis:6379"
+    command: ["./wait-for-it.sh", "sqlserver:1433", "--timeout=60", "--", "dotnet", "HighPerformanceApi.dll"]
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: highperf-sql
+    environment:
+      SA_PASSWORD: "YourStrong!Pass123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./init-scripts:/docker-entrypoint-initdb.d
+      - ./entrypoint.sh:/entrypoint.sh
+    entrypoint: ["/bin/bash", "/entrypoint.sh"]
+
+  redis:
+    image: redis:7
+    container_name: highperf-redis
+    ports:
+      - "6379:6379"
