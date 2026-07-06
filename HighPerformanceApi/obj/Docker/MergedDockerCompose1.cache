@@ -1,0 +1,150 @@
+name: dockercompose15689497553089161768
+services:
+  highperformanceapi:
+    build:
+      context: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi
+      dockerfile: HighPerformanceApi/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: HighPerformanceApi
+      target: base
+    command:
+      - ./wait-for-it.sh
+      - sqlserver:1433
+      - --timeout=60
+      - --
+      - dotnet
+      - HighPerformanceApi.dll
+    container_name: highperf-api
+    depends_on:
+      redis:
+        condition: service_started
+        required: true
+      sqlserver:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=HighPerfDb;User=sa;Password=YourStrong!Pass123;TrustServerCertificate=True;
+      ConnectionStrings__Redis: redis:6379
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: highperformanceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/HighPerformanceApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi\HighPerformanceApi
+        target: /app
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi
+        target: /src
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\AppData\Roaming\Microsoft\UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind: {}
+  redis:
+    container_name: highperf-redis
+    image: redis:7
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+  sqlserver:
+    container_name: highperf-sql
+    entrypoint:
+      - /bin/bash
+      - /entrypoint.sh
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: YourStrong!Pass123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi\init-scripts
+        target: /docker-entrypoint-initdb.d
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi\entrypoint.sh
+        target: /entrypoint.sh
+        bind: {}
+networks:
+  default:
+    name: dockercompose15689497553089161768_default

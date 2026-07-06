@@ -1,0 +1,74 @@
+name: dockercompose15689497553089161768
+services:
+  highperformanceapi:
+    build:
+      context: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi
+      dockerfile: HighPerformanceApi/Dockerfile
+    command:
+      - ./wait-for-it.sh
+      - sqlserver:1433
+      - --timeout=60
+      - --
+      - dotnet
+      - HighPerformanceApi.dll
+    container_name: highperf-api
+    depends_on:
+      redis:
+        condition: service_started
+        required: true
+      sqlserver:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=HighPerfDb;User=sa;Password=YourStrong!Pass123;TrustServerCertificate=True;
+      ConnectionStrings__Redis: redis:6379
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  redis:
+    container_name: highperf-redis
+    image: redis:7
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+  sqlserver:
+    container_name: highperf-sql
+    entrypoint:
+      - /bin/bash
+      - /entrypoint.sh
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: YourStrong!Pass123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi\init-scripts
+        target: /docker-entrypoint-initdb.d
+        bind: {}
+      - type: bind
+        source: C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\HighPerformanceApi\entrypoint.sh
+        target: /entrypoint.sh
+        bind: {}
+networks:
+  default:
+    name: dockercompose15689497553089161768_default

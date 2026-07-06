@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\HighPerformanceApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LebogangJanPapo\\Downloads\\ProjectGenerateReportMetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4193111-86B0-4292-8268-C262DC9E70B6}|..\\Persistence\\Persistence.csproj|c:\\users\\lebogangjanpapo\\source\\repos\\dotnet-high-performance-api-template\\persistence\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E558C4-350E-4257-A501-CA718695999E}|..\\Infrastructure\\Infrastructure.csproj|c:\\users\\lebogangjanpapo\\source\\repos\\dotnet-high-performance-api-template\\infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFAE17E2-404C-470A-8773-D8C2EBBF7BA6}|..\\Domain\\Domain.csproj|c:\\users\\lebogangjanpapo\\source\\repos\\dotnet-high-performance-api-template\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E3FA8C2-536E-4B39-B88B-D3AC1E9C894F}|..\\Application\\Application.csproj|c:\\users\\lebogangjanpapo\\source\\repos\\dotnet-high-performance-api-template\\application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69AB43B0-5C07-40CD-852D-5591AD77D40F}|HighPerformanceApi\\HighPerformanceApi.csproj|c:\\users\\lebogangjanpapo\\source\\repos\\dotnet-high-performance-api-template\\highperformanceapi\\highperformanceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69AB43B0-5C07-40CD-852D-5591AD77D40F}|HighPerformanceApi\\HighPerformanceApi.csproj|solutionrelative:highperformanceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectGenerateReportMetadata.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\Downloads\\ProjectGenerateReportMetadata.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\ProjectGenerateReportMetadata.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\Downloads\\ProjectGenerateReportMetadata.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\ProjectGenerateReportMetadata.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T11:19:07.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Persistence\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Persistence\\Class1.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Persistence\\Class1.cs",
+              "RelativeToolTip": "..\\Persistence\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T09:07:39.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Infrastructure\\Class1.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T09:07:24.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Domain\\Class1.cs",
+              "RelativeToolTip": "..\\Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T09:07:12.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Application\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\Application\\Class1.cs",
+              "RelativeToolTip": "..\\Application\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T09:06:52.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\HighPerformanceApi\\HighPerformanceApi\\Program.cs",
+              "RelativeDocumentMoniker": "HighPerformanceApi\\Program.cs",
+              "ToolTip": "C:\\Users\\LebogangJanPapo\\source\\repos\\dotnet-high-performance-api-template\\HighPerformanceApi\\HighPerformanceApi\\Program.cs",
+              "RelativeToolTip": "HighPerformanceApi\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T05:13:59.08Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

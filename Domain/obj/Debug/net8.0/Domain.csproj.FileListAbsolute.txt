@@ -1,0 +1,12 @@
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Domain\obj\Debug\net8.0\ref\Domain.dll

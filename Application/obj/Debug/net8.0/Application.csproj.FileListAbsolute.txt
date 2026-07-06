@@ -1,0 +1,12 @@
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\bin\Debug\net8.0\Application.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\LebogangJanPapo\source\repos\dotnet-high-performance-api-template\Application\obj\Debug\net8.0\ref\Application.dll
